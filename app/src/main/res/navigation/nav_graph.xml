@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/spleshFragment">
+
+    <fragment
+        android:id="@+id/spleshFragment"
+        android:name="com.mansurdev.homevork_681.SpleshFragment"
+        android:label="fragment_splesh"
+        tools:layout="@layout/fragment_splesh" >
+        <action
+            android:id="@+id/action_spleshFragment_to_homFragment"
+            app:destination="@id/homFragment"
+            app:popUpTo="@id/spleshFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/homFragment"
+        android:name="com.mansurdev.homevork_681.HomFragment"
+        android:label="fragment_hom"
+        tools:layout="@layout/fragment_hom" />
+</navigation>
